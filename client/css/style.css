@@ -18,16 +18,16 @@
 :root {
     --colour-1: #000000;
     --colour-2: #ccc;
-    --colour-3: #e4d4ff;
+    --colour-3: #FFDB80;
     --colour-4: #f0f0f0;
     --colour-5: #181818;
     --colour-6: #242424;
 
-    --accent: #8b3dff;
+    --accent: #FFDB58;
     --blur-bg: #16101b66;
     --blur-border: #84719040;
-    --user-input: #ac87bb;
-    --conversations: #c7a2ff;
+    --user-input: #FFDB80;
+    --conversations: #FFE680;
 }
 
 :root {
@@ -99,7 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-wrap: break-word;
-    overflow-y: inherit;
+    overflow-y: hidden;
     overflow-x: hidden;
     padding-bottom: 50px;
 }
@@ -474,7 +474,7 @@ select {
     cursor: pointer;
     user-select: none;
     background: transparent;
-    border: 1px solid #c7a2ff;
+    border: 1px solid #FFDB80;
     border-radius: var(--border-radius-1);
     width: 100%;
 }
@@ -489,7 +489,17 @@ select {
     flex-direction: column;
     gap: 16px;
     overflow: auto;
+
+    /* Ocultar la barra de desplazamiento para Chrome, Safari y Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Ocultar la barra de desplazamiento para IE, Edge y Firefox */
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
 
 #cursor {
     line-height: 17px;
@@ -812,4 +822,44 @@ a:-webkit-any-link {
     --clr-card-bg: hsl(209 50% 5%);
     --colour-3: hsl(209 50% 90%);
     --conversations: hsl(209 50% 80%);
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#e7baff, #c2b6d9);
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#drop-area{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#img-view  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px dashed;
+    background-color: #f7f8ff;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-view img {
+    width: 100px;
+    margin-top: 25px;
+}
+
+#img-view span{
+    display: block;
+    font-style: 12px;
+    color: #777;
+    margin-top: 15px;
 }

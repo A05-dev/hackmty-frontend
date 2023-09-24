@@ -4,9 +4,9 @@
         "port" : 1338,
         "debug": false
     },
-    "openai_key": "sk-...",
+    "openai_key": "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",
 
-    "openai_api_base": "https://api.openai.com",
+    "openai_api_base": "http://my-reverse-proxy/",
     "proxy": {
         "enable": true,
         "http": "127.0.0.1:7890",
