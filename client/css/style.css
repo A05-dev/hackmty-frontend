@@ -16,18 +16,18 @@
 } */
 
 :root {
-    --colour-1: #000000;
+    --colour-1: #FCF9E3;
     --colour-2: #ccc;
-    --colour-3: #FFDB80;
-    --colour-4: #f0f0f0;
+    --colour-3: #008000; /* verde */
+    --colour-4: #f5f5dc; /* beige */
     --colour-5: #181818;
     --colour-6: #242424;
 
-    --accent: #FFDB58;
-    --blur-bg: #16101b66;
-    --blur-border: #84719040;
-    --user-input: #FFDB80;
-    --conversations: #FFE680;
+    --accent: #00ff00; /* verde eléctrico */
+    --blur-bg: #ECE9D3;
+    --blur-border: #00800040; /* verde con transparencia */
+    --user-input: #f5f5dc; /* beige */
+    --conversations: #008800; /* beige */
 }
 
 :root {
@@ -65,7 +65,7 @@ body {
 
 .box {
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(50px);
     background-color: var(--blur-bg);
     height: 100%;
     width: 100%;
@@ -827,7 +827,7 @@ a:-webkit-any-link {
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#FFDB5850, #000000);
+    
     display: flex; /* Change this */
     align-items: center;
     justify-content: center;
