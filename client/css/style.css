@@ -827,11 +827,12 @@ a:-webkit-any-link {
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#e7baff, #c2b6d9);
-    display: center;
+    background: linear-gradient(#FFDB5850, #000000);
+    display: flex; /* Change this */
     align-items: center;
     justify-content: center;
 }
+
 
 #drop-area{
     width: 500px;
@@ -846,7 +847,7 @@ a:-webkit-any-link {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    border: 2px dashed;
+    border: 2px dashed #ccc;
     background-color: #f7f8ff;
     background-position: center;
     background-size: cover;
